@@ -1,0 +1,104 @@
+
+$main-brown: #140d0b;
+$main-pink: #ef9691;
+$main-yellow: #e1a920;
+$light-brown: #ecd0ac;
+$white: #fff;
+$pri-type: 'Big Shoulders Display',
+cursive;
+$sec-type: 'playball',
+cursive;
+
+
+// footer styling 
+
+footer {
+ width: 100vw;
+ height: 60vh;
+ background-color: $main-brown;
+
+ #footer-flex {
+  width: 100%;
+  height: 100%;
+  padding: 2rem 1rem 0 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: $pri-type;
+  color: $light-brown;
+
+  img {
+   width: 20rem;
+  }
+
+ }
+
+ h3 {
+  font-weight: 800;
+  font-size: 1.5rem;
+
+ }
+
+ #links {
+
+  ul {
+   list-style: none;
+   font-family: 'roboto';
+   margin-top: .5rem;
+   font-size: 1.05rem;
+   font-weight: 500;
+   cursor: pointer;
+
+  }
+
+  a {
+   text-decoration: none;
+   color: $light-brown;
+   margin-bottom: .5rem;
+
+   &:hover {
+    color: $main-pink;
+   }
+
+  }
+
+ }
+
+ #hours {
+  margin-top: -1.5rem;
+
+  p {
+   font-family: 'roboto';
+   margin-top: .6rem;
+   font-size: 0.9rem;
+   font-weight: 400;
+
+  }
+ }
+
+ #contact {
+
+  p {
+   font-family: 'roboto';
+   margin-top: .5rem;
+   font-size: 0.9rem;
+   font-weight: 400;
+
+  }
+
+  div {
+   width: 50%;
+   margin-top: 1rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-size: 1.1rem;
+   cursor: pointer;
+
+  }
+
+ }
+
+}
+
+// footer styling End

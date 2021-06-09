@@ -1,0 +1,762 @@
+@import './home.scss';
+@import './about.scss';
+@import './menu.scss';
+@import './service.scss';
+@import './review.scss';
+@import './footer.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;500;600;700;800;900&family=Playball&family=Roboto:wght@400;500&display=swap');
+
+
+
+$main-brown: #140d0b;
+$main-pink: #ef9691;
+$main-yellow: #e1a920;
+$light-brown: #ecd0ac;
+$white: #fff;
+$pri-type: 'Big Shoulders Display', cursive;
+$sec-type: 'playball', cursive;
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+ scroll-behavior: smooth;
+}
+
+body {
+ background-color: #ffefef;
+ overflow-x:hidden ;
+}
+
+
+
+@mixin media($width){
+ @media screen and (max-width:$width){
+  @content;
+ }
+}
+
+@mixin media-width-only($width) {
+ @media screen and (width:$width) {
+  @content;
+ }
+}
+
+
+
+@include media(1280px){
+#home {
+ height: 100vh;
+
+ #center {
+  top: 15%;
+  left: 20%;
+
+  img {
+   width: 40rem;
+  }
+
+  p {
+   font-size: 4.5rem;
+  }
+ }
+
+}
+}
+
+
+
+
+
+@include media(1024px){
+ #home{
+  height: 100vh;
+
+  #background {
+   height: 100%;
+   background-size: 210%;
+   background-position: center top;
+   filter: blur(0.2rem);
+  }
+  
+  nav{
+
+   ul {
+    .nav-item {
+     font-size: 1.4rem;
+     margin-top: -2rem;
+     margin-right: 1rem;
+    }
+ 
+    img{
+     width: 9rem;
+    }
+
+   }
+
+  }
+
+  #center{
+   top: 20%;
+   left: 10%;
+   img{
+    width: 50rem;
+   }
+   p{
+    font-size: 4.5rem;
+   }
+  }
+
+ }
+
+ #about{
+  flex-direction: column;
+
+  figure{
+   width: 100%;
+   margin-top: 0rem ;
+   margin-bottom: 2rem;
+  }
+
+  article{
+   width: 100%;
+   margin-top: 1rem;
+
+   h1{
+    text-align: center;
+    font-size: 3rem;
+   }
+
+   h2{
+    text-align: center;
+    font-size:2.5rem ;
+   }
+   
+   p{
+    margin: 0 auto 4rem auto;
+    text-align: center;
+    line-height: 2rem;
+    font-size: 1.1rem;
+   }
+
+   button{
+    display: block;
+    margin: auto;
+    font-size: 1.5rem;
+   }
+
+  }
+
+ }
+
+ #menu-wrapper{
+  height: 63rem;
+
+  .price {
+   visibility: initial;
+
+   h4{
+    margin: 5rem 0 0 0;
+   }
+
+   p{
+    font-size: 2rem;
+   }
+  }
+ }
+
+ #menu{
+  h2{
+   font-size: 3rem;
+  }
+
+  h3{
+   font-size: 2.5rem;
+  }
+
+  #menu-item{
+   width: 70%;
+
+   .price{
+    h4{
+     width: 3.5rem;
+     height: 3.5rem;
+    }
+    p{
+     font-size: 1.8rem;
+    }
+   }
+  }
+
+ }
+
+ #icons{
+
+  figure{
+   font-size:1.2rem ;
+   letter-spacing: .1rem;
+  }
+
+ }
+
+
+ #reviews{
+  height: 30vh;
+  background-size: 120%;
+ background-repeat: no-repeat;
+ background-position: center center;
+
+ }
+
+ footer{
+  height: 60vh;
+  
+
+  #footer-flex{
+   flex-wrap: wrap;
+
+   img{
+    width: 40%;
+    margin-top: -5rem;
+   }
+  }
+  
+  h3
+
+
+  #hours,
+  #contact{
+   width: 50%;
+   display: grid;
+   place-content: center;
+  }
+
+  #links{
+   margin-top: -10rem;
+   width: 60%;
+   display: grid;
+   place-content: center
+  }
+
+  #hours,
+  #contact{
+   margin-top: -15rem;
+   padding-left: 5rem;
+  }
+
+  
+
+ }
+
+
+}
+
+@include media(768px){
+#home {
+ height: 100vh;
+
+ #background {
+  height: 100%;
+  background-size: 193%;
+  background-position: center top;
+  filter: blur(0.2rem);
+ }
+
+
+ #center {
+  top: 20%;
+  left: 11%;
+
+  #center-logo{
+   width: 35rem;
+  }
+
+  p {
+   font-size: 3.8rem;
+   margin-top: 3rem;
+  }
+
+ }
+
+}
+
+#menu {
+ h2 {
+  font-size: 4rem;
+ }
+
+ h3 {
+  font-size: 3rem;
+ }
+
+ #menu-item {
+  width: 90%;
+ }
+
+}
+
+#order-form{
+ form{
+  width: 80%;
+  flex-direction: column;
+  padding-left: 4rem;
+
+  #info,
+  #order-info {
+   width: 100%;
+  }
+
+  
+ }
+}
+
+
+ #reviews {
+  height: 40vh;
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+
+  #review-flex{
+   width: 80%;
+  }
+
+  .back{
+   text-align: center;
+  }
+}
+
+}
+
+
+@include media(540px){
+ #home {
+  height: 100vh;
+
+  #background {
+   height: 100%;
+   background-size: 180%;
+   background-position: center top;
+   filter: blur(0.1rem);
+  }
+
+  nav {
+   // display: none;
+   ul {
+    .nav-item {
+     font-size: 1.1rem;
+     margin-top: -1rem;
+     margin-right: 1rem;
+    }
+
+    img {
+     width: 6rem;
+    }
+
+   }
+
+  }
+
+  #center {
+   top: 20%;
+   left: 13%;
+
+   #center-logo {
+    width: 23rem;
+   }
+
+   p {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+   }
+
+  }
+
+ }
+
+ #about {
+  flex-direction: column;
+
+  figure {
+   width: 90%;
+   margin-top: -4rem;
+   margin-bottom: 2rem;
+  }
+
+  article {
+   width: 100%;
+   margin-top: 1rem;
+
+   h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: -3rem;
+   }
+
+   h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: -1rem;
+   }
+
+   p {
+    width: 100%;
+    margin: 0 auto 1rem auto;
+    text-align: center;
+    line-height: 2rem;
+    font-size: 1rem;
+   }
+
+   button {
+    display: block;
+    margin: auto;
+    font-size: 1.2rem;
+   }
+
+  }
+
+ }
+
+ #menu-wrapper{
+  height: 87rem;
+ }
+
+ #menu {
+  h2 {
+   font-size: 3rem;
+   margin-top: 3rem;
+  }
+
+  h3 {
+   font-size: 2rem;
+  }
+
+  #menu-item {
+   width: 90%;
+
+   .item-pic{
+    width: 50%;
+   }
+
+  }
+
+ }
+ 
+
+ #icons{
+  flex-wrap: wrap;
+  figure{
+   width: 50%;
+  }
+ }
+
+ #order-form{
+
+  form{
+   width: 100%;
+  }
+ }
+
+ #reviews{
+  height: 100vh;
+  background-size: 180%;
+  background-position: center bottom;
+
+  #review-flex{
+   width: 100%;
+   flex-wrap: wrap;
+  }
+
+  .single-review{
+   width: 40%;
+  }
+
+ }
+
+ footer {
+  height: 100vh;
+
+
+  #footer-flex {
+   flex-wrap: wrap;
+
+   img {
+    width: 40%;
+    margin-top: -5rem;
+   }
+  }
+
+  #hours,
+  #contact {
+   width: 100%;
+   display: grid;
+   place-content: center;
+  }
+
+  #links {
+   margin-top: -8rem;
+   width: 100%;
+   display: grid;
+   place-content: center
+  }
+
+  #hours,
+  #contact {
+   margin-top: -5rem;
+   padding-left: 0rem;
+  }
+
+
+
+ }
+
+
+}
+
+@include media(420px){
+#home {
+
+ height: 100vh;
+
+ #mobile-menu{
+  top: 1%;
+  display: initial;
+ }
+
+ #background {
+  height: 100%;
+  background-size: 250%;
+  background-position: center top;
+  filter: blur(0.1rem);
+ }
+
+ nav {
+  // display: none;
+  height: 0;
+  overflow: hidden;
+  background-color:#140d0bbd;
+  transition: all 1s ease-in;
+
+  ul {
+   width: 100%;
+   height: 100%;
+   flex-direction: column;
+   justify-content: space-evenly;
+
+   .logo{
+    margin-right: 0;
+   }
+
+
+   .nav-item {
+    font-size: 1.5rem;
+    // margin-top: -1rem;
+    // margin-right: 1rem;
+   }
+
+   img {
+    width: 6rem;
+   }
+
+  }
+
+ }
+
+ #center {
+  top: 20%;
+  left: 3%;
+
+  #center-logo {
+   width: 25rem;
+  }
+
+  p {
+   font-size: 2.1rem;
+   margin-top: 5rem;
+  }
+
+ }
+
+}
+
+ #about{
+ height: 55rem;
+
+  figure{
+   img{
+    width: 90%;
+   }
+  }
+  article{
+   h1{
+    font-size: 2rem;
+    margin-top: 0rem;
+   }
+  }
+
+ }
+
+ #menu-item{
+  width: 100%;
+  .price{
+
+   h4{
+    width: 3.5rem;
+    height: 3.5rem;
+   }
+ 
+   p{
+    font-size: 1.5rem;
+   }
+  }
+ }
+
+ #order-form{
+  
+  form{
+   flex-wrap: wrap;
+   padding-left: 1rem;
+   #info{
+    width: 100%;
+    margin: auto;
+    input{
+     width: 100%;
+    }
+   }
+
+   #order-info{
+    width: 100%;
+   }
+  }
+
+  select,textarea{
+   width: 100%;
+  }
+ }
+
+}
+
+@include media(375px){
+#home {
+ height: 100vh;
+
+ #background {
+  height: 100%;
+  background-size: 280%;
+  background-position: center top;
+  filter: blur(0.1rem);
+ }
+
+ nav {
+
+
+  ul {
+   .nav-item {
+    font-size: 1.1rem;
+    margin-top: -1rem;
+    margin-right: 1rem;
+   }
+
+   img {
+    width: 6rem;
+   }
+
+  }
+
+ }
+
+ #center {
+  top: 28%;
+  left: 0%;
+
+  #center-logo {
+   width: 23rem;
+  }
+
+  p {
+   font-size: 2.1rem;
+   margin-top: 1rem;
+  }
+
+ }
+
+}
+
+#order-form{
+ form{
+  padding-left: 1rem;
+ }
+}
+
+
+}
+
+@include media(320px){
+ #home {
+  height: 100vh;
+
+  #background {
+   height: 100%;
+   background-size: 250%;
+   background-position: center top;
+   filter: blur(0.1rem);
+  }
+
+  nav {
+
+
+   ul {
+    .nav-item {
+     font-size: 1.1rem;
+     margin-top: -1rem;
+     margin-right: 1rem;
+    }
+
+    img {
+     width: 6rem;
+    }
+
+   }
+
+  }
+
+  #center {
+   top: 20%;
+   left: 0%;
+
+   #center-logo {
+    width: 22rem;
+   }
+
+   p {
+    font-size: 2rem;
+    margin-top: 3rem;
+   }
+
+  }
+
+ }
+
+ #about {
+  height: 60rem;
+
+  figure {
+   img {
+    width: 90%;
+   }
+  }
+
+  article {
+   h1 {
+    font-size: 2rem;
+    margin-top: 0rem;
+   }
+  }
+
+ }
+
+}

@@ -1,0 +1,86 @@
+
+$main-brown: #140d0b;
+$main-pink: #ef9691;
+$main-yellow: #e1a920;
+$light-brown: #ecd0ac;
+$white: #fff;
+$pri-type: 'Big Shoulders Display',
+cursive;
+$sec-type: 'playball',
+cursive;
+
+
+
+// about section styling
+
+#about {
+ width: 100%;
+ height: 100vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ padding: 5rem 2rem 0 2rem;
+
+
+ figure {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+   width: 70%;
+  }
+ }
+
+ article {
+  width: 50%;
+
+  h1 {
+   font-family: $pri-type;
+   font-size: 3.5rem;
+   font-weight: 800;
+   color: $main-brown;
+   margin-bottom: 1rem;
+  }
+
+  h2 {
+   font-family: $sec-type;
+   font-size: 2rem;
+   color: $main-yellow;
+   margin-bottom: 0.5rem;
+  }
+
+  p {
+   width: 80%;
+   font-family: 'roboto';
+   line-height: 1.5rem;
+   color: $main-brown;
+   margin-bottom: 1rem;
+  }
+
+  button {
+   font-family: $pri-type;
+   font-size: 1.2rem;
+   font-weight: 800;
+   padding: .8rem;
+   border-radius: .3rem;
+   background-color: #ff665e;
+   color: whitesmoke;
+   border: none;
+   box-shadow: 0 0 .5rem #f83a2dbe;
+   cursor: pointer;
+   transition: transform .1s linear;
+
+   &:hover {
+    transform: scale(1.02);
+    transition: all .1s linear;
+   }
+
+  }
+
+ }
+
+}
+
+// about section styling End

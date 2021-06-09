@@ -1,0 +1,124 @@
+
+$main-brown: #140d0b;
+$main-pink: #ef9691;
+$main-yellow: #e1a920;
+$light-brown: #ecd0ac;
+$white: #fff;
+$pri-type: 'Big Shoulders Display',
+cursive;
+$sec-type: 'playball',
+cursive;
+
+
+
+// menu styling
+
+#menu-wrapper {
+ width: 100vw;
+ height: 60.6rem;
+ background: url(../pics-icons/menu-background.jpg);
+ background-size: cover;
+ background-position: center bottom;
+ background-attachment: fixed;
+ position: relative;
+
+
+}
+
+#menu {
+ position: absolute;
+ top: 0;
+ width: 100%;
+ height: auto;
+ background-color: #ecd0ac49;
+ background-attachment: fixed;
+
+ h2 {
+  text-align: center;
+  margin-top: 8rem;
+  font-family: $pri-type;
+  font-size: 2.7rem;
+  font-weight: 800;
+  color: $main-brown;
+ }
+
+ h3 {
+  text-align: center;
+  font-family: $sec-type;
+  font-size: 2.3rem;
+  color: white;
+  margin-bottom: 1rem;
+ }
+}
+
+#menu-item {
+ width: 60%;
+ margin: auto;
+ display: flex;
+ flex-wrap: wrap;
+
+ .item-pic {
+  width: 33.3%;
+  height: 15rem;
+  position: relative;
+  cursor: pointer;
+  padding: 0.1rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+   transform: scale(1.05);
+   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.788);
+   z-index: 1;
+   transition: all 0.2s ease-in-out;
+  }
+
+  &:hover .price {
+   visibility: initial;
+   transition: all 0.2s ease-in-out;
+  }
+ }
+
+
+ .price {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(to top, #140d0bd8, #140d0b00);
+  visibility: hidden;
+
+  h4 {
+   font-family: $pri-type;
+   font-size: 2rem;
+   font-weight: 600;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 4rem;
+   height: 4rem;
+   border-radius: 50%;
+   background-color: #f83a2dbe;
+   color: $light-brown;
+   margin-bottom: 1rem;
+  }
+
+  p {
+   font-family: $sec-type;
+   font-size: 2rem;
+   color: $light-brown;
+  }
+ }
+
+ #pic1 {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+ }
+}
+
+// menu styling End

@@ -1,0 +1,109 @@
+
+$main-brown: #140d0b;
+$main-pink: #ef9691;
+$main-yellow: #e1a920;
+$light-brown: #ecd0ac;
+$white: #fff;
+$pri-type: 'Big Shoulders Display', cursive;
+$sec-type: 'playball', cursive;
+
+
+
+// Review styling 
+
+#reviews {
+ width: 100vw;
+ height: 70vh;
+ background: url(../pics-icons/review-background.jpg);
+ background-size: 105%;
+ background-repeat: no-repeat;
+ background-position: center top;
+ background-attachment: fixed;
+
+
+ #review-wrap {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  backdrop-filter: blur(.1rem);
+
+  h2 {
+   font-family: $pri-type;
+   font-weight: 800;
+   font-size: 2.3rem;
+   margin-bottom: 1rem;
+  }
+
+ }
+
+
+ #review-flex {
+  width: 60%;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+
+ }
+
+ .single-review {
+  width: calc(25% - .5rem);
+  height: 15rem;
+  position: relative;
+  perspective: 600px;
+  font-family: 'roboto';
+
+
+  &:hover .front {
+   transform: rotateY(180deg);
+   transition: all 2s ease-in-out;
+  }
+
+  .front {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   background: linear-gradient(to top, #ecd0acce, #ecd0ac4f),
+    url(../pics-icons/texture.jpg);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   transform-style: preserve-3d;
+   backface-visibility: hidden;
+   transition: all 2s ease-in-out;
+   border-radius: .5rem;
+
+
+   img {
+    width: 8rem;
+    clip-path: circle(45% at 50% 50%);
+   }
+
+
+  }
+
+  .back {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: .5rem;
+   padding: 0 .5rem;
+   background: linear-gradient(to top, #ecd0acce, #ecd0ac4f),
+    url(../pics-icons/texture.jpg);
+  }
+
+ }
+
+}
+
+// Review styling End

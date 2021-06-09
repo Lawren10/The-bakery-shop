@@ -1,0 +1,105 @@
+.bgcolor {
+  background-color: #ffefef;
+}
+
+#home {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+#home .display {
+  height: 100vh;
+  transition: all 1s ease-in;
+}
+
+#home .rotate {
+  transform: rotate(90deg);
+  transition: all 1s ease-in;
+}
+
+#home #mobile-menu {
+  position: absolute;
+  top: 0;
+  right: 2%;
+  font-size: 2rem;
+  color: #e1a920;
+  z-index: 11;
+  cursor: pointer;
+  transition: transform 1s ease-in;
+  display: none;
+}
+
+#home #background {
+  width: 100%;
+  height: 100%;
+  background: url(../pics-icons/alt-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-attachment: fixed;
+  filter: blur(0.1rem);
+}
+
+#home nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+#home nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1.5rem;
+  list-style: none;
+}
+
+#home nav ul .logo {
+  margin-right: auto;
+}
+
+#home nav ul img {
+  width: 6rem;
+}
+
+#home nav ul .nav-item {
+  width: 10%;
+  padding: .5rem;
+  text-align: center;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 800;
+  font-size: 1.15rem;
+  letter-spacing: .05rem;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+#home nav ul .nav-item a {
+  color: #e1a920;
+  text-decoration: none;
+}
+
+#home nav ul .nav-item:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+
+#home #center {
+  position: absolute;
+  top: 2%;
+  left: 28%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#home #center p {
+  font-family: "playball", cursive;
+  font-size: 3.5rem;
+  color: whitesmoke;
+  text-shadow: 0.2rem 0 black;
+}

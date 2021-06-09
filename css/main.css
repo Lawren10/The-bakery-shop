@@ -1,0 +1,1048 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;500;600;700;800;900&family=Playball&family=Roboto:wght@400;500&display=swap");
+.bgcolor {
+  background-color: #ffefef;
+}
+
+#home {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+#home .display {
+  height: 100vh;
+  transition: all 1s ease-in;
+}
+
+#home .rotate {
+  transform: rotate(90deg);
+  transition: all 1s ease-in;
+}
+
+#home #mobile-menu {
+  position: absolute;
+  top: 0;
+  right: 2%;
+  font-size: 2rem;
+  color: #e1a920;
+  z-index: 11;
+  cursor: pointer;
+  transition: transform 1s ease-in;
+  display: none;
+}
+
+#home #background {
+  width: 100%;
+  height: 100%;
+  background: url(../pics-icons/alt-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-attachment: fixed;
+  filter: blur(0.1rem);
+}
+
+#home nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+#home nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1.5rem;
+  list-style: none;
+}
+
+#home nav ul .logo {
+  margin-right: auto;
+}
+
+#home nav ul img {
+  width: 6rem;
+}
+
+#home nav ul .nav-item {
+  width: 10%;
+  padding: .5rem;
+  text-align: center;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 800;
+  font-size: 1.15rem;
+  letter-spacing: .05rem;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+#home nav ul .nav-item a {
+  color: #e1a920;
+  text-decoration: none;
+}
+
+#home nav ul .nav-item:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+
+#home #center {
+  position: absolute;
+  top: 2%;
+  left: 28%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#home #center p {
+  font-family: "playball", cursive;
+  font-size: 3.5rem;
+  color: whitesmoke;
+  text-shadow: 0.2rem 0 black;
+}
+
+#about {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 2rem 0 2rem;
+}
+
+#about figure {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#about figure img {
+  width: 70%;
+}
+
+#about article {
+  width: 50%;
+}
+
+#about article h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #140d0b;
+  margin-bottom: 1rem;
+}
+
+#about article h2 {
+  font-family: "playball", cursive;
+  font-size: 2rem;
+  color: #e1a920;
+  margin-bottom: 0.5rem;
+}
+
+#about article p {
+  width: 80%;
+  font-family: 'roboto';
+  line-height: 1.5rem;
+  color: #140d0b;
+  margin-bottom: 1rem;
+}
+
+#about article button {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 1.2rem;
+  font-weight: 800;
+  padding: .8rem;
+  border-radius: .3rem;
+  background-color: #ff665e;
+  color: whitesmoke;
+  border: none;
+  box-shadow: 0 0 .5rem #f83a2dbe;
+  cursor: pointer;
+  transition: transform .1s linear;
+}
+
+#about article button:hover {
+  transform: scale(1.02);
+  transition: all .1s linear;
+}
+
+#menu-wrapper {
+  width: 100vw;
+  height: 60.6rem;
+  background: url(../pics-icons/menu-background.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  background-attachment: fixed;
+  position: relative;
+}
+
+#menu {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: auto;
+  background-color: #ecd0ac49;
+  background-attachment: fixed;
+}
+
+#menu h2 {
+  text-align: center;
+  margin-top: 8rem;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2.7rem;
+  font-weight: 800;
+  color: #140d0b;
+}
+
+#menu h3 {
+  text-align: center;
+  font-family: "playball", cursive;
+  font-size: 2.3rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+#menu-item {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#menu-item .item-pic {
+  width: 33.3%;
+  height: 15rem;
+  position: relative;
+  cursor: pointer;
+  padding: 0.1rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+#menu-item .item-pic:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.788);
+  z-index: 1;
+  transition: all 0.2s ease-in-out;
+}
+
+#menu-item .item-pic:hover .price {
+  visibility: initial;
+  transition: all 0.2s ease-in-out;
+}
+
+#menu-item .price {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(to top, #140d0bd8, #140d0b00);
+  visibility: hidden;
+}
+
+#menu-item .price h4 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: #f83a2dbe;
+  color: #ecd0ac;
+  margin-bottom: 1rem;
+}
+
+#menu-item .price p {
+  font-family: "playball", cursive;
+  font-size: 2rem;
+  color: #ecd0ac;
+}
+
+#menu-item #pic1 {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+}
+
+#icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: .5rem;
+  background-color: #140d0b;
+}
+
+#icons figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 0.05rem;
+  color: #ecd0ac;
+  padding: .5rem;
+}
+
+#icons img {
+  width: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+#order-form {
+  padding: 3rem 0;
+}
+
+#order-form h2 {
+  text-align: center;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 800;
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
+}
+
+#order-form form {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  padding: 1rem;
+}
+
+#order-form form #info {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+#order-form form #info input {
+  margin-bottom: 1rem;
+  border: 1px solid #140d0b;
+  color: #ecd0ac;
+}
+
+#order-form form #order-info {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+#order-form form #order-info select {
+  margin-bottom: 1rem;
+}
+
+#order-form select,
+#order-form option,
+#order-form input,
+#order-form textarea {
+  font-family: 'roboto';
+  font-size: 1rem;
+  padding: 0.6rem 0 0.6rem 0.3rem;
+  width: 90%;
+  background-color: #140d0b;
+  color: #ecd0ac;
+  border-radius: 0.2rem;
+}
+
+#order-form button {
+  width: 8rem;
+  display: block;
+  margin: 1rem auto;
+  text-align: center;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 1.2rem;
+  font-weight: 800;
+  padding: .8rem;
+  border-radius: .3rem;
+  background-color: #ff665e;
+  color: whitesmoke;
+  border: none;
+  box-shadow: 0 0 .5rem #f83a2dbe;
+  cursor: pointer;
+  transition: transform .1s linear;
+}
+
+#order-form button:hover {
+  transform: scale(1.02);
+  transition: all .1s linear;
+}
+
+#order-form p {
+  width: 60%;
+  margin: 2rem auto 0 auto;
+  font-family: "playball", cursive;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+#reviews {
+  width: 100vw;
+  height: 70vh;
+  background: url(../pics-icons/review-background.jpg);
+  background-size: 105%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+}
+
+#reviews #review-wrap {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  backdrop-filter: blur(0.1rem);
+}
+
+#reviews #review-wrap h2 {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 800;
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
+}
+
+#reviews #review-flex {
+  width: 60%;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+}
+
+#reviews .single-review {
+  width: calc(25% - .5rem);
+  height: 15rem;
+  position: relative;
+  perspective: 600px;
+  font-family: 'roboto';
+}
+
+#reviews .single-review:hover .front {
+  transform: rotateY(180deg);
+  transition: all 2s ease-in-out;
+}
+
+#reviews .single-review .front {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to top, #ecd0acce, #ecd0ac4f), url(../pics-icons/texture.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  transition: all 2s ease-in-out;
+  border-radius: .5rem;
+}
+
+#reviews .single-review .front img {
+  width: 8rem;
+  clip-path: circle(45% at 50% 50%);
+}
+
+#reviews .single-review .back {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: .5rem;
+  padding: 0 .5rem;
+  background: linear-gradient(to top, #ecd0acce, #ecd0ac4f), url(../pics-icons/texture.jpg);
+}
+
+footer {
+  width: 100vw;
+  height: 60vh;
+  background-color: #140d0b;
+}
+
+footer #footer-flex {
+  width: 100%;
+  height: 100%;
+  padding: 2rem 1rem 0 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Big Shoulders Display", cursive;
+  color: #ecd0ac;
+}
+
+footer #footer-flex img {
+  width: 20rem;
+}
+
+footer h3 {
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+footer #links ul {
+  list-style: none;
+  font-family: 'roboto';
+  margin-top: .5rem;
+  font-size: 1.05rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+footer #links a {
+  text-decoration: none;
+  color: #ecd0ac;
+  margin-bottom: .5rem;
+}
+
+footer #links a:hover {
+  color: #ef9691;
+}
+
+footer #hours {
+  margin-top: -1.5rem;
+}
+
+footer #hours p {
+  font-family: 'roboto';
+  margin-top: .6rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+footer #contact p {
+  font-family: 'roboto';
+  margin-top: .5rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+footer #contact div {
+  width: 50%;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffefef;
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 1280px) {
+  #home {
+    height: 100vh;
+  }
+  #home #center {
+    top: 15%;
+    left: 20%;
+  }
+  #home #center img {
+    width: 40rem;
+  }
+  #home #center p {
+    font-size: 4.5rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #home {
+    height: 100vh;
+  }
+  #home #background {
+    height: 100%;
+    background-size: 210%;
+    background-position: center top;
+    filter: blur(0.2rem);
+  }
+  #home nav ul .nav-item {
+    font-size: 1.4rem;
+    margin-top: -2rem;
+    margin-right: 1rem;
+  }
+  #home nav ul img {
+    width: 9rem;
+  }
+  #home #center {
+    top: 20%;
+    left: 10%;
+  }
+  #home #center img {
+    width: 50rem;
+  }
+  #home #center p {
+    font-size: 4.5rem;
+  }
+  #about {
+    flex-direction: column;
+  }
+  #about figure {
+    width: 100%;
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+  }
+  #about article {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  #about article h1 {
+    text-align: center;
+    font-size: 3rem;
+  }
+  #about article h2 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  #about article p {
+    margin: 0 auto 4rem auto;
+    text-align: center;
+    line-height: 2rem;
+    font-size: 1.1rem;
+  }
+  #about article button {
+    display: block;
+    margin: auto;
+    font-size: 1.5rem;
+  }
+  #menu-wrapper {
+    height: 63rem;
+  }
+  #menu-wrapper .price {
+    visibility: initial;
+  }
+  #menu-wrapper .price h4 {
+    margin: 5rem 0 0 0;
+  }
+  #menu-wrapper .price p {
+    font-size: 2rem;
+  }
+  #menu h2 {
+    font-size: 3rem;
+  }
+  #menu h3 {
+    font-size: 2.5rem;
+  }
+  #menu #menu-item {
+    width: 70%;
+  }
+  #menu #menu-item .price h4 {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  #menu #menu-item .price p {
+    font-size: 1.8rem;
+  }
+  #icons figure {
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+  }
+  #reviews {
+    height: 30vh;
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  footer {
+    height: 60vh;
+  }
+  footer #footer-flex {
+    flex-wrap: wrap;
+  }
+  footer #footer-flex img {
+    width: 40%;
+    margin-top: -5rem;
+  }
+  footer h3
+#hours,
+  footer #contact {
+    width: 50%;
+    display: grid;
+    place-content: center;
+  }
+  footer #links {
+    margin-top: -10rem;
+    width: 60%;
+    display: grid;
+    place-content: center;
+  }
+  footer #hours,
+  footer #contact {
+    margin-top: -15rem;
+    padding-left: 5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #home {
+    height: 100vh;
+  }
+  #home #background {
+    height: 100%;
+    background-size: 193%;
+    background-position: center top;
+    filter: blur(0.2rem);
+  }
+  #home #center {
+    top: 20%;
+    left: 11%;
+  }
+  #home #center #center-logo {
+    width: 35rem;
+  }
+  #home #center p {
+    font-size: 3.8rem;
+    margin-top: 3rem;
+  }
+  #menu h2 {
+    font-size: 4rem;
+  }
+  #menu h3 {
+    font-size: 3rem;
+  }
+  #menu #menu-item {
+    width: 90%;
+  }
+  #order-form form {
+    width: 80%;
+    flex-direction: column;
+    padding-left: 4rem;
+  }
+  #order-form form #info,
+  #order-form form #order-info {
+    width: 100%;
+  }
+  #reviews {
+    height: 40vh;
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
+  #reviews #review-flex {
+    width: 80%;
+  }
+  #reviews .back {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #home {
+    height: 100vh;
+  }
+  #home #background {
+    height: 100%;
+    background-size: 180%;
+    background-position: center top;
+    filter: blur(0.1rem);
+  }
+  #home nav ul .nav-item {
+    font-size: 1.1rem;
+    margin-top: -1rem;
+    margin-right: 1rem;
+  }
+  #home nav ul img {
+    width: 6rem;
+  }
+  #home #center {
+    top: 20%;
+    left: 13%;
+  }
+  #home #center #center-logo {
+    width: 23rem;
+  }
+  #home #center p {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+  }
+  #about {
+    flex-direction: column;
+  }
+  #about figure {
+    width: 90%;
+    margin-top: -4rem;
+    margin-bottom: 2rem;
+  }
+  #about article {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  #about article h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: -3rem;
+  }
+  #about article h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: -1rem;
+  }
+  #about article p {
+    width: 100%;
+    margin: 0 auto 1rem auto;
+    text-align: center;
+    line-height: 2rem;
+    font-size: 1rem;
+  }
+  #about article button {
+    display: block;
+    margin: auto;
+    font-size: 1.2rem;
+  }
+  #menu-wrapper {
+    height: 87rem;
+  }
+  #menu h2 {
+    font-size: 3rem;
+    margin-top: 3rem;
+  }
+  #menu h3 {
+    font-size: 2rem;
+  }
+  #menu #menu-item {
+    width: 90%;
+  }
+  #menu #menu-item .item-pic {
+    width: 50%;
+  }
+  #icons {
+    flex-wrap: wrap;
+  }
+  #icons figure {
+    width: 50%;
+  }
+  #order-form form {
+    width: 100%;
+  }
+  #reviews {
+    height: 100vh;
+    background-size: 180%;
+    background-position: center bottom;
+  }
+  #reviews #review-flex {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  #reviews .single-review {
+    width: 40%;
+  }
+  footer {
+    height: 100vh;
+  }
+  footer #footer-flex {
+    flex-wrap: wrap;
+  }
+  footer #footer-flex img {
+    width: 40%;
+    margin-top: -5rem;
+  }
+  footer #hours,
+  footer #contact {
+    width: 100%;
+    display: grid;
+    place-content: center;
+  }
+  footer #links {
+    margin-top: -8rem;
+    width: 100%;
+    display: grid;
+    place-content: center;
+  }
+  footer #hours,
+  footer #contact {
+    margin-top: -5rem;
+    padding-left: 0rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  #home {
+    height: 100vh;
+  }
+  #home #mobile-menu {
+    top: 1%;
+    display: initial;
+  }
+  #home #background {
+    height: 100%;
+    background-size: 250%;
+    background-position: center top;
+    filter: blur(0.1rem);
+  }
+  #home nav {
+    height: 0;
+    overflow: hidden;
+    background-color: #140d0bbd;
+    transition: all 1s ease-in;
+  }
+  #home nav ul {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  #home nav ul .logo {
+    margin-right: 0;
+  }
+  #home nav ul .nav-item {
+    font-size: 1.5rem;
+  }
+  #home nav ul img {
+    width: 6rem;
+  }
+  #home #center {
+    top: 20%;
+    left: 3%;
+  }
+  #home #center #center-logo {
+    width: 25rem;
+  }
+  #home #center p {
+    font-size: 2.1rem;
+    margin-top: 5rem;
+  }
+  #about {
+    height: 55rem;
+  }
+  #about figure img {
+    width: 90%;
+  }
+  #about article h1 {
+    font-size: 2rem;
+    margin-top: 0rem;
+  }
+  #menu-item {
+    width: 100%;
+  }
+  #menu-item .price h4 {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  #menu-item .price p {
+    font-size: 1.5rem;
+  }
+  #order-form form {
+    flex-wrap: wrap;
+    padding-left: 1rem;
+  }
+  #order-form form #info {
+    width: 100%;
+    margin: auto;
+  }
+  #order-form form #info input {
+    width: 100%;
+  }
+  #order-form form #order-info {
+    width: 100%;
+  }
+  #order-form select, #order-form textarea {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #home {
+    height: 100vh;
+  }
+  #home #background {
+    height: 100%;
+    background-size: 280%;
+    background-position: center top;
+    filter: blur(0.1rem);
+  }
+  #home nav ul .nav-item {
+    font-size: 1.1rem;
+    margin-top: -1rem;
+    margin-right: 1rem;
+  }
+  #home nav ul img {
+    width: 6rem;
+  }
+  #home #center {
+    top: 28%;
+    left: 0%;
+  }
+  #home #center #center-logo {
+    width: 23rem;
+  }
+  #home #center p {
+    font-size: 2.1rem;
+    margin-top: 1rem;
+  }
+  #order-form form {
+    padding-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #home {
+    height: 100vh;
+  }
+  #home #background {
+    height: 100%;
+    background-size: 250%;
+    background-position: center top;
+    filter: blur(0.1rem);
+  }
+  #home nav ul .nav-item {
+    font-size: 1.1rem;
+    margin-top: -1rem;
+    margin-right: 1rem;
+  }
+  #home nav ul img {
+    width: 6rem;
+  }
+  #home #center {
+    top: 20%;
+    left: 0%;
+  }
+  #home #center #center-logo {
+    width: 22rem;
+  }
+  #home #center p {
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+  #about {
+    height: 60rem;
+  }
+  #about figure img {
+    width: 90%;
+  }
+  #about article h1 {
+    font-size: 2rem;
+    margin-top: 0rem;
+  }
+}

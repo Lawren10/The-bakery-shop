@@ -1,0 +1,114 @@
+#icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: .5rem;
+  background-color: #140d0b;
+}
+
+#icons figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 0.05rem;
+  color: #ecd0ac;
+  padding: .5rem;
+}
+
+#icons img {
+  width: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+#order-form {
+  padding: 3rem 0;
+}
+
+#order-form h2 {
+  text-align: center;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 800;
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
+}
+
+#order-form form {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  padding: 1rem;
+}
+
+#order-form form #info {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+#order-form form #info input {
+  margin-bottom: 1rem;
+  border: 1px solid #140d0b;
+  color: #ecd0ac;
+}
+
+#order-form form #order-info {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+#order-form form #order-info select {
+  margin-bottom: 1rem;
+}
+
+#order-form select,
+#order-form option,
+#order-form input,
+#order-form textarea {
+  font-family: 'roboto';
+  font-size: 1rem;
+  padding: 0.6rem 0 0.6rem 0.3rem;
+  width: 90%;
+  background-color: #140d0b;
+  color: #ecd0ac;
+  border-radius: 0.2rem;
+}
+
+#order-form button {
+  width: 8rem;
+  display: block;
+  margin: 1rem auto;
+  text-align: center;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 1.2rem;
+  font-weight: 800;
+  padding: .8rem;
+  border-radius: .3rem;
+  background-color: #ff665e;
+  color: whitesmoke;
+  border: none;
+  box-shadow: 0 0 .5rem #f83a2dbe;
+  cursor: pointer;
+  transition: transform .1s linear;
+}
+
+#order-form button:hover {
+  transform: scale(1.02);
+  transition: all .1s linear;
+}
+
+#order-form p {
+  width: 60%;
+  margin: 2rem auto 0 auto;
+  font-family: "playball", cursive;
+  font-size: 1.3rem;
+  text-align: center;
+}
